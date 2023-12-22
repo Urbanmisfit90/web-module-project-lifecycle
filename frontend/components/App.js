@@ -28,7 +28,6 @@ export default class App extends React.Component {
       })
       .catch(this.setAxiosResponseError);
   }
-  
   onTodoFormSubmit = evt => {
     evt.preventDefault()
     this.postNewTodo()
@@ -51,7 +50,6 @@ export default class App extends React.Component {
     })
     .catch(this.setAxiosResponseError)
   };
-
   toggleDisplayCompleteds = () => {
     this.setState({ ...this.state, displayCompleteds: !this.state.displayCompleteds }) 
   }
